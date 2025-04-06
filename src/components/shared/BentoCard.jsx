@@ -1,6 +1,6 @@
 const BentoCard = ({ src, title, description }) => {
   return (
-    <div className="relative size-full">
+    <div className="relative size-full rounded-xl">
       <video
         src={src}
         loop

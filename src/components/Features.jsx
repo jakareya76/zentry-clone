@@ -30,17 +30,19 @@ const BentoTilt = ({ children, className = "" }) => {
   };
 
   return (
-    <div
-      className={className}
-      ref={itemRef}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-      style={{
-        transform: transformStyle,
-      }}
-    >
-      {children}
-    </div>
+    <>
+      <div
+        className={className}
+        ref={itemRef}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        style={{
+          transform: transformStyle,
+        }}
+      >
+        {children}
+      </div>
+    </>
   );
 };
 
@@ -57,7 +59,7 @@ const Features = () => {
             agentic AI and blockchain lead the new economic paradigm.
           </p>
         </div>
-        <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
+        <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-lg md:h-[65vh]">
           <BentoCard
             src="/videos/feature-1.mp4"
             title={
@@ -70,7 +72,7 @@ const Features = () => {
         </BentoTilt>
 
         <div className="grid h-[135vh] grid-cols-2 grid-rows-3 gap-7">
-          <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
+          <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2 rounded-xl">
             <BentoCard
               src="/videos/feature-2.mp4"
               title={
